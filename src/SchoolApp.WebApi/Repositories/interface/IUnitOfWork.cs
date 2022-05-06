@@ -1,6 +1,10 @@
+using SchoolApp.WebApi.Models;
+
 namespace SchoolApp.WebApi.Repositories;
 
-public class IUnitOfWork
+public interface IUnitOfWork: IDisposable
 {
-    
+    IGenericRepository<Student>  Students { get; set; }
+    IGenericRepository<Course> Course { get; }
+    Task Save();
 }

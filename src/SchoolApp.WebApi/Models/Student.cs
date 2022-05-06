@@ -9,8 +9,7 @@ public class Student
     public int StudentId { get; set; }
     public string Name { get; set; }
     public string Email { get; set; }
-    
-    
+    public ICollection<Course> Enrollment { get; set; }
     //public int? CourseId { get; set; }
     // private IList<Course> _enrollments = new List<Course>();
     // [ForeignKey(nameof(CourseId))] 

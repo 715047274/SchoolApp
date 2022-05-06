@@ -340,3 +340,5 @@ ASALocalRun/
 healthchecksdb
 
 .idea/
+src/SchoolApp.WebApi/SchoolApp.db-shm
+src/SchoolApp.WebApi/SchoolApp.db-wal

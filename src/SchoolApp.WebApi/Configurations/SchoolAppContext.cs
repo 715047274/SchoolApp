@@ -8,7 +8,7 @@ public class SchoolAppContext:DbContext
 {
     public SchoolAppContext(DbContextOptions<SchoolAppContext>options):base(options)
     {
-        Database.EnsureCreated();
+        //Database.EnsureCreated();
     }
 
     // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -18,7 +18,7 @@ public class SchoolAppContext:DbContext
     //     optionsBuilder.UseSqlite(connectionString);
     // }
     public DbSet<Student> Students { get; set; }
-
+    public DbSet<Course>Courses { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
